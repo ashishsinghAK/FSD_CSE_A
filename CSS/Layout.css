@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(9, 6, 47);
+}
+
+.container{
+    color:black;
+    font-size: 2em;
+    font-style: italic;
+    height:400px;
+    border:2px solid red;
+    display:flex;
+    justify-content: space-around;
+}
+
+.child1, .child2, .child3, .child4{
+    height:300px;
+    width:8em;
+    /* display:inline-block; */
+    margin:1em;
+    border-style: dotted;
+}
+
+.child1{
+    background-color: red;
+    flex-basis:50%
+}
+.child2{
+    background-color: yellow;
+}
+.child3{
+    background-color: orange;
+}
+.child4{
+    background-color: yellowgreen;
+}
