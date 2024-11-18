@@ -1,6 +1,7 @@
 import React from 'react'
 import Student from './Component/Student';
 import "./App.css"
+import StudentState from './Component/StudentState';
 
 const App = () => {
   let a = 12;
@@ -9,13 +10,29 @@ const App = () => {
     color: 'black',
   }
 
+  const data = {
+    name:"Ashish Nehra",
+    college:"Ashish Khel Academy",
+    branch:"CSE",
+    sec:"A"
+  }
+
   return (
     <div className='body'>
-      <div style={Mystyle}>
-        hello world
+      {/* <Student college="ABES ENGINEERING COLLEGE" name="Ashish Kumar Singh" sec="A" branch='CSEA'/>
+      <Student name="Ashish Kumar Singh" sec="A" branch='CSEA'/>
+      <Student college="ABES ENGINEERING COLLEGE" name="Ashish Kumar Singh" sec="A" branch='CSEA'/>
+      <Student college="ABES ENGINEERING COLLEGE" name="Ashish Kumar Singh" sec="A" branch='CSEA'/> */}
 
+      <div className='body1'>
+      <Student data={data} />
+      <Student data={data} />
+      <Student data={data} />
+      <Student data={data} />
       </div>
-      <Student college="ABES ENGINEERING COLLEGE"/>
+      
+      <StudentState/>
+      
     </div>
   )
 }

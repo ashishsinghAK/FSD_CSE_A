@@ -3,19 +3,38 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    
+    width:100vw;
 }
 
 .table{
-    background-color: aqua;
-    width:30em;
+    width:15em;
+    height:23em;
     padding: 1em;
     border-radius: .5em;
+    display:flex;
+    justify-content: center;
+    border:2px solid black;
 }
 
 .abcd{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    gap:1em
+    gap:1em;
+    text-align: center;
+}
+
+img{
+    width:5em;
+    height:6em;
+    border-radius:1em;
+}
+
+.college{
+    font-size:1em;
+    font-weight: bold;
+}
+
+.head{
+    color:red;
 }
