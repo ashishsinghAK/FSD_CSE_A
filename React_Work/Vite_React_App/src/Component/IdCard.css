@@ -1,4 +1,4 @@
-.header{
+/* .header{
     font-size: 1em;
     display:flex;
     justify-content: center;
@@ -38,3 +38,23 @@ img{
 .head{
     color:red;
 }
+
+.count{
+    margin:5em;
+    border:1px solid red;
+    padding:5em;
+    display: flex;
+    gap:5em;
+}
+
+.value{
+    border:1px solid black;
+    width:5em;
+    text-align: center;
+}
+
+.btn{
+    display:flex;
+    gap:2em;
+}
+ */

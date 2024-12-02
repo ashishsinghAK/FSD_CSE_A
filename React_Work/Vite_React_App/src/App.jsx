@@ -2,6 +2,7 @@ import React from 'react'
 import Student from './Component/Student';
 import "./App.css"
 import StudentState from './Component/StudentState';
+import ImageManupulation from './Component/ImageManupulation';
 
 const App = () => {
   let a = 12;
@@ -24,14 +25,15 @@ const App = () => {
       <Student college="ABES ENGINEERING COLLEGE" name="Ashish Kumar Singh" sec="A" branch='CSEA'/>
       <Student college="ABES ENGINEERING COLLEGE" name="Ashish Kumar Singh" sec="A" branch='CSEA'/> */}
 
-      <div className='body1'>
+      {/* <div className='body1'>
       <Student data={data} />
       <Student data={data} />
       <Student data={data} />
       <Student data={data} />
-      </div>
+      </div> */}
       
-      <StudentState/>
+      {/* <StudentState/> */}
+      <ImageManupulation/>
       
     </div>
   )
