@@ -3,6 +3,8 @@ import Student from './Component/Student';
 import "./App.css"
 import StudentState from './Component/StudentState';
 import ImageManupulation from './Component/ImageManupulation';
+import { Child1 } from './Component/Props/Child1';
+import  AppContext  from './Component/AppContext';
 
 const App = () => {
   let a = 12;
@@ -33,8 +35,9 @@ const App = () => {
       </div> */}
       
       {/* <StudentState/> */}
-      <ImageManupulation/>
-      
+      {/* <ImageManupulation/> */}
+      <Child1/>
+      <AppContext/>
     </div>
   )
 }

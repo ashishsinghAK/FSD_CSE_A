@@ -1,9 +1,10 @@
-/* .body{
-    background-color:bisque;
+ .body{
+    background-color:rgb(24, 16, 6);
     width:100vw;
     height:100vh;
     display:flex;
     flex-direction: column;
+    color:white
 }
 
 .body1{
@@ -14,4 +15,4 @@
     overflow-x: hidden;
     margin:0;
     padding:0
-} */
+} 
