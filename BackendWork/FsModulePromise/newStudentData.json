@@ -1,0 +1,17 @@
+[
+    {
+        "name":"abcd",
+        "class":"CSEA",
+        "roll":"37"
+    },
+    {
+        "name":"efgh",
+        "class":"CSEB",
+        "roll":"38"
+    },
+    {
+        "name":"xyz",
+        "class":"CSEC",
+        "roll":"39"
+    }
+]
