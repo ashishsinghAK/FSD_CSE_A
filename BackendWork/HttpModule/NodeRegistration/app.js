@@ -4,6 +4,15 @@ const fs = require('fs').promises;
 const PORT = 3100
 
 const server = http.createServer((req, res) => {
+    res.setHeader('Access-Control-Allow-Origin','*');
+    res.setHeader('Access-Control-Allow-method','GET,POST,DELETE,PUT,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers','Content-Type');
+
+    if(req.method=="OPTIONS"){
+        res.statusCode=200;
+        return res.end();
+    }
+    
     if (req.url == '/register' && req.method == 'POST') {
         let body = ''
         let arr = []

@@ -1,5 +1,7 @@
 
 import './App.css'
+import Login from './Component/Login'
+import Registration from './Component/Registration'
 
 function App() {
  
@@ -7,7 +9,8 @@ function App() {
   return (
     <>
       <div>
-        Hello React        
+        <Login/>
+        <Registration/>
       </div>
 
     </>
