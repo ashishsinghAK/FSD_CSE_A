@@ -53,7 +53,7 @@ const server = http.createServer((req, res) => {
             arr = JSON.parse(fData);
             if(arr.find(ele => ele.email==email && ele.password == password)){
                 res.setHeader('Content-Type', 'application/json')
-                return res.end(JSON.stringify({ "message": "Login Successfully" }))
+                return res.end(JSON.stringify({ "message": "Success" }))
             }
             else{
                 return res.end(JSON.stringify({ "message": "Login Failed. Check your Credentials" }))

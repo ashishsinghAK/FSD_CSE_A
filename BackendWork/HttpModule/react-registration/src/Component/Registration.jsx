@@ -2,9 +2,9 @@ import React from 'react'
 import "./component.css"
 
 const Registration = () => {
-    const sendData = async(e) => {
+    const sendData = async (e) => {
         e.preventDefault();
-        
+
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.pass.value;
@@ -29,23 +29,29 @@ const Registration = () => {
             console.error("Error:", error);
         }
     }
-  return (
-    <div className='head'>
-        <h1>Registration Form</h1>
-            <form action="" onSubmit={sendData}>
-                <label htmlFor="name">Name</label>
-                <input type="text"name='name' required placeholder='Name' id='name'/>
+    return (
+        <div className='head'>
+            <h1>Registration Form</h1>
+            <form action="" onSubmit={sendData} className='form'>
+                <div>
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name='name' required placeholder='Name' id='name' />
+                </div>
 
-                <label htmlFor="email">Email</label>
-                <input type="email"name='email' required placeholder='Email' id='email'/>
+                <div>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name='email' required placeholder='Email' id='email' />
+                </div>
 
-                <label htmlFor="pass">Password</label>
-                <input type="password"name='pass' required placeholder='Password' id='pass'/>
+                <div>
+                    <label htmlFor="pass">Password</label>
+                    <input type="password" name='pass' required placeholder='Password' id='pass' />
+                </div>
 
-                <button type='submit'>Submit</button>
+                <button type='submit' className='btn'>Submit</button>
             </form>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Registration

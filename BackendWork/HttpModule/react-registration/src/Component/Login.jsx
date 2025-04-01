@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-
-
+import "./component.css"
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
-
+    const navigate = useNavigate();
 
     const sendData = async (e) => {
         e.preventDefault();
@@ -18,22 +18,29 @@ const Login = () => {
 
         const res = await response.json();
         alert(res.message);
+        if(res.message=="Success"){
+            navigate("/dashboard")
+        }
         console.log("Server Response:", res);
     }
 
     return (
 
-        <div>
+        <div className='head'>
             <h1>Login Form</h1>
-            <form action="" onSubmit={sendData}>
+            <form action="" onSubmit={sendData} className='form'>
 
-                <label htmlFor="email">Email</label>
-                <input type="email" name='email' required placeholder='Email' id='email' />
+                <div>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name='email' required placeholder='Email' id='email' />
+                </div>
 
-                <label htmlFor="pass">Password</label>
-                <input type="password" name='pass' required placeholder='Password' id='pass' />
+                <div>
+                    <label htmlFor="pass">Password</label>
+                    <input type="password" name='pass' required placeholder='Password' id='pass' />
+                </div>
 
-                <button type='submit'>Submit</button>
+                <button type='submit' className='btn'>Submit</button>
             </form>
         </div>
     )
